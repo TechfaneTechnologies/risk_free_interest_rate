@@ -34,7 +34,7 @@ def riskFreeInetrestRate(
 ) -> None:
     response = HTMLParser(requests.get(url,headers=headers).content)
     selector = "#wrapper > div:nth-child(10) > table"
-    data = [node.html for node in rbi.css(selector)]
+    data = [node.html for node in response.css(selector)]
     df = (pd.read_html(data[0])[0][4:13])
     df.columns = ["GovernmentSecurityName", "Percent"]
     df.reset_index(inplace=True,drop=True)
