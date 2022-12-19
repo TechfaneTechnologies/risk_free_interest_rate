@@ -10,7 +10,6 @@ __webpage__ = "https://github.com/MooneDrJune"
 __license__ = "MIT"
 
 try:
-    import json
     import requests
     import pandas as pd
     from selectolax.parser import HTMLParser
@@ -18,10 +17,9 @@ except (ImportError, ModuleNotFoundError):
     __import__("os").system(
         f"{__import__('sys').executable} -m pip install -U requests selectolax pandas json"
     )
-    import json
     import requests
+    import pandas as pd
     from selectolax.parser import HTMLParser
-    from typing import Tuple, List, Dict, Union
 
 user_agent = requests.get(
     "https://techfanetechnologies.github.io/latest-user-agent/user_agents.json"
