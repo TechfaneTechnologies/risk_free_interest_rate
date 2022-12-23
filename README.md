@@ -5,7 +5,7 @@ A Python Script To Fetch The Government Securities T-Bills Interest Rates From R
 Check for updates daily at 08:00 AM IST and 08:00 PM IST
 
 ## Raw JSON Files
-- [RiskFreeInetrestRate.json](https://techfanetechnologies.github.io/risk_free_interest_rate/RiskFreeInetrestRate.json)
+- [RiskFreeInterestRate.json](https://techfanetechnologies.github.io/risk_free_interest_rate/RiskFreeInterestRate.json)
 
 ## _If You have liked the work, Do Star This Repository and Stay-Up-To-Date_
 <p align="center">
