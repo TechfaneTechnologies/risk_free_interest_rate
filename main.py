@@ -41,7 +41,7 @@ def riskFreeInetrestRate(
     df["GovernmentSecurityName"] = df["GovernmentSecurityName"].str.rstrip(' ').str.lstrip(' ')
     df["Percent"] = df["Percent"].str.rstrip('% #').str.rstrip('%*').str.lstrip(':  ')
     df = df.astype({'GovernmentSecurityName': 'str', 'Percent': 'float32'}, copy=False)
-    with open("RiskFreeInetrestRate.json", "w") as jsonFile:
+    with open("RiskFreeInterestRate.json", "w") as jsonFile:
         jsonFile.write(df.to_json(orient='records'))
 
 if __name__ == "__main__":
